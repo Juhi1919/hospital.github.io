@@ -1,0 +1,45 @@
+body {
+    background-image: url("../images/bg.jpg");
+    
+}
+
+.container {
+	height: auto;
+	width: 100%;
+}
+
+.jumbotron {
+	opacity: 0.7;
+}
+
+.panel {
+	opacity: 0.8;
+}
+
+.panel > .panel-heading {
+    background-color: black;
+    color: white;
+}
+
+#addBtn {
+    background-color: black;
+    color: white;
+    border: none;
+}
+#hospitalinfo
+{
+    color:lightsteelblue;
+
+}
+#myInput
+{
+    border: 2px black;
+    width:195px;
+    margin: 10px;
+    padding: 5px;
+}
+#searchmap
+{
+    color: cyan;
+    
+}

@@ -1,0 +1,54 @@
+<!--<!Doctype HTML>
+<html>
+        <title>Map Direction</Form></title>
+
+    
+<script src="assets/javascript/leaflet.js"
+integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+crossorigin="">
+
+</script>
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
+
+
+
+
+
+<body>
+        <div id="mapid" style="width:400px;height:400px;background:yellow"></div>
+        <div id ="backtohome">
+                <a href="index.html">Back To Search</a>
+        </div>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>A simple map</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+<style>
+  
+  #map { position:absolute;height: 50%; width:70%;border: 3px black;padding:50px;}
+ </style>
+</head>
+<body>
+        <input type="text" id="search" onkeyup="" placeholder="Search here"><br><br><br>
+	<a href="index.html">Serch Blood type</a><br><br><br>
+<div id='map'></div>
+
+
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoianVoaXBhdGVsOTM5NCIsImEiOiJjamtrMWQ5cncwZ201M3dwOGs1ZGlzeWhjIn0.GYR9B-JK2FFySnfzs-DTvg';
+var map = L.mapbox.map('map', 'mapbox.streets')
+    .setView([33,-84.390], 9);
+</script>
+
+
+</body>
+</html>
